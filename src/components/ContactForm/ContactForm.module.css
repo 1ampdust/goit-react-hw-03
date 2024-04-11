@@ -1,4 +1,4 @@
-.сontactForm {
+.contactForm {
 border: 1px solid #ccc;
     padding: 20px;
     width: 400px;
@@ -21,4 +21,9 @@ border: 1px solid #ccc;
 .input {
     height: 25px;
     font-size: 16px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
 }

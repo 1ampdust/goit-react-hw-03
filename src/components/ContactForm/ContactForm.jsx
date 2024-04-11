@@ -9,8 +9,8 @@ function ContactForm({ onSubmit }) {
   };
 
   const validationSchema = Yup.object({
-    name: Yup.string().required('Name is required'),
-    number: Yup.string().required('Number is required!').min(3, 'Number must be at least 3 characters').max(20, 'Number cannot exceed 50 characters')
+    name: Yup.string().required('Required').min(3, 'Too Short!').max(20, 'Number cannot exceed 50 characters'),
+    number: Yup.string().required('Required').min(3, 'Too Short!').max(20, 'Number cannot exceed 50 characters')
   });
 
   const handleSubmit = (values, { resetForm }) => {
