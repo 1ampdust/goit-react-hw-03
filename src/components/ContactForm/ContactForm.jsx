@@ -1,3 +1,4 @@
+//ContactForm.jsx
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import css from "./ContactForm.module.css";
@@ -9,8 +10,8 @@ function ContactForm({ onSubmit }) {
   };
 
   const validationSchema = Yup.object({
-    name: Yup.string().required('Required').min(3, 'Too Short!').max(20, 'Number cannot exceed 50 characters'),
-    number: Yup.string().required('Required').min(3, 'Too Short!').max(20, 'Number cannot exceed 50 characters')
+    name: Yup.string().required('Required').min(3, 'Too Short!').max(30, 'Number cannot exceed 30 characters'),
+    number: Yup.string().required('Required').min(3, 'Too Short!').max(30, 'Number cannot exceed 30 characters')
   });
 
   const handleSubmit = (values, { resetForm }) => {

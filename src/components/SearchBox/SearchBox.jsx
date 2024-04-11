@@ -1,3 +1,4 @@
+//SearchBox.jsx
 import css from "./SearchBox.module.css";
 function SearchBox({ value, onChange }) {
   return (
